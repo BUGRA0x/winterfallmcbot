@@ -6,8 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.channel.send('Pong!');
+  if (msg.content === 'amk') {
+    msg.delete(30)
+    msg.channel.send('**Küfür Engellendi**');
   }
 
   if (msg.content === 'sa') {
