@@ -6,8 +6,7 @@ const cevaplar = [
     "belki",
     "olabilir",
     "daha sonra tekrar sor.",
-    "imkansız!"
-    "asla!"
+    
 ];
 
 exports.run = function(client, message, args) {
