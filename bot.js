@@ -7,6 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'amk') {
+    msg.delete(30)
     msg.channel.send('**Küfür Engellendi**');
   }
 
@@ -18,8 +19,9 @@ client.on('message', msg => {
     msg.reply('Aleykum Selam knk :)');
   }
 
-  if (msg.content === 'selamın aleyküm') {
-    msg.reply('Aleykum Selam knk :)');
+  if (msg.content === 'discord.gg') {
+    msg.delete(30)
+    msg.reply('**Reklam Engellendi** :)');
   }
 
   if (msg.content === 'ping') {
