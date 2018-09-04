@@ -4,8 +4,8 @@ exports.run = function(client, message, args) {
     return message.author.send('`temizle` komutu sadece sunucularda kullanılabilir.');
   }
   let mesajsayisi = parseInt(args.join(' '));
-  if (mesajsayisi.length < 1) return message.channel.send('Kaç mesaj silmem gerektiğini belirtmedin.')
-  if (mesajsayisi > 100) return message.channel.send('100 adetden fazla mesaj silemem!');
+  if (mesajsayisi.length < 1) return message.channel.send('Ne kadar mesaj silmem gerektiğini belirtmedin.')
+  if (mesajsayisi > 100) return message.channel.send('99 adetden fazla mesaj silemem!');
   message.channel.bulkDelete(mesajsayisi + 1);
   message.channel.send(mesajsayisi +' adet mesaj sildim!')
 };
