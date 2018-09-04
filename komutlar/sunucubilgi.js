@@ -17,7 +17,7 @@ exports.run = (client, message, params) => {
     .setAuthor(message.guild.name, message.guild.iconURL)
     .addField('Ad:', message.guild.name)
     .addField('ID', message.guild.id)
-    .addField('Ana kanal:', message.guild.defaultChannel)
+    .addField('Ana kanal:', genel)
     .addField('Bölge', message.guild.region)
     .addField('Üye sayısı:', message.guild.memberCount)
     .addField('Sahibi:', message.guild.owner + ' (' + message.guild.ownerID + ')')
