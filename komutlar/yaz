@@ -16,6 +16,6 @@ exports.conf = {
 
 exports.help = {
   name: '',
-  description: 'XxXxXxXxXxXxXxXx',
-  usage: 'XxXxXxXxXxXxXx]'
+  description: 'Bu komut yasaklanmış.',
+  usage: 'Bu komut yasaklanmış.]'
 };
