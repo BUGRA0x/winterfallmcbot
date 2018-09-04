@@ -14,7 +14,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Serhan (Black Monday) **Sohbet ve Oyun**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=288310817810546699&scope=bot&permissions=401812495 \n\n_**Linkler:**_\n\n**Sohbet ve Oyun** sunucusunun davet linki: https://discord.gg/GEeGjnH \nBotun davet linki: https://discordapp.com/oauth2/authorize?client_id=288310817810546699&scope=bot&permissions=401812495 \n\n**:copyright: 2017 Sohbet ve Oyun**');
+    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Buğra (BugraGunes) **WinterFallMC**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=485812404073267206&scope=bot&permissions=8 \n\n_**Linkler:**_\n\n**WinterFallMC** sunucusunun davet linki: https://discord.gg/4CVC2aP \nBotun davet linki: https://discordapp.com/oauth2/authorize?client_id=485812404073267206&scope=bot&permissions=8 \n\n**:copyright: 2017 WinterFallMC**');
     return message.author.sendEmbed(pingozel)
 };
 
