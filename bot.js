@@ -79,9 +79,51 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content === 'discord.gg') {
+  if (msg.content === 'amk') {
    msg.delete(30)
-    msg.reply('Reklam Engellendi');
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'ananı sikim') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'ananı sikeyim') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'oç') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi*');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbuçocugu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbu çocuğu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi*');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'orosbu çocugu') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === 'piç') {
+   msg.delete(30)
+    msg.reply('**Küfür Engellendi**');
   }
 });
 
