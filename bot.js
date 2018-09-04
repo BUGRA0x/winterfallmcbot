@@ -99,7 +99,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'oç') {
    msg.delete(30)
-    msg.reply('**Küfür Engellendi*');
+    msg.reply('**Küfür Engellendi**');
   }
 });
 client.on('message', msg => {
@@ -111,7 +111,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'orosbu çocuğu') {
    msg.delete(30)
-    msg.reply('**Küfür Engellendi*');
+    msg.reply('**Küfür Engellendi**');
   }
 });
 client.on('message', msg => {
