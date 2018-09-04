@@ -84,7 +84,7 @@ client.on('message', msg => {
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
 			msg.author.sendMessage('**Reklam Engellendi**'); 
 		} else {
-		msg.reply('**Reklam Engellendi**');
+		msg.reply('');
 		}
 	}
 });
