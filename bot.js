@@ -82,7 +82,7 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'aq') {
 	  msg.delete(30)
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage(''); 
+			msg.author.sendMessage('**Küfür Engellendi**'); 
 		} else {
 		msg.reply('**Küfür Engellendi**');
 		}
