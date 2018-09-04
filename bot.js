@@ -79,14 +79,10 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'aq') {
-	  msg.delete(30)
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('**Küfür Engellendi**'); 
-		} else {
-		msg.reply('**Küfür Engellendi**');
-		}
-	}
+  if (msg.content === 'discord.gg') {
+   msg.delete(30)
+    msg.reply('Reklam Engellendi');
+  }
 });
 
 client.elevation = message => {
