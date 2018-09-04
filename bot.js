@@ -79,7 +79,7 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'amk') {
+  if (msg.content.toLowerCase() === 'aq') {
 	  msg.delete(30)
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
 			msg.author.sendMessage(''); 
