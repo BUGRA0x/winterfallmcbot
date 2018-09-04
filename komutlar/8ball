@@ -27,7 +27,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: '8ball', 
+  name: 'sor', 
   description: 'Sihirli 8ball sorularınızı cevaplar',
-  usage: '8ball <soru>'
+  usage: 'sor <soru>'
 };
