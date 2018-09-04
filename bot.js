@@ -79,12 +79,12 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'discord.gg') {
+  if (msg.content.toLowerCase() === 'amk') {
 	  msg.delete(30)
 		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
-			msg.author.sendMessage('**Reklam Engellendi**'); 
+			msg.author.sendMessage(''); 
 		} else {
-		msg.reply('');
+		msg.reply('**Küfür Engellendi**');
 		}
 	}
 });
