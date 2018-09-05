@@ -126,6 +126,11 @@ client.on('message', msg => {
     msg.reply('**Küfür Engellendi**');
   }
 });
+client.on('message', msg => {
+  if (msg.content === 'sa') {
+    msg.reply('Aleyküm Selam cnm :))');
+  }
+});
 
 client.elevation = message => {
   if(!message.guild) {
