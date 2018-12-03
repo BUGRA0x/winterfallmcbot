@@ -79,58 +79,34 @@ client.unload = command => {
 };
 
 client.on('message', msg => {
-  if (msg.content === 'amk') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
+  if (msg.content.toLowerCase() === 'sa') {
+		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
+			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
+		} else {
+		msg.reply('Aleyküm selam, hoş geldin ^^');
+		}
+	}
 });
-client.on('message', msg => {
-  if (msg.content === 'ananı sikim') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
+
+////////////////////////
+
+client.on("guildMemberAdd", member => {
+	
+	var channel = member.guild.channels.find("name", "genel");
+	if (!channel) return;
+	
+	var role = member.guild.roles.find("name", "Üye");
+	if (!role) return;
+	
+	member.addRole(role); 
+	
+	channel.send(member + " artık " + role + " rolü ile aramızda");
+	
+	member.send("Aramıza hoş geldin, WinterFallMC'nin tadını çıkar! Ayrıca kuralları okursan iyi edersin :)")
+	
 });
-client.on('message', msg => {
-  if (msg.content === 'ananı sikeyim') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'oç') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'orosbuçocugu') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'orosbu çocuğu') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'orosbu çocugu') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'piç') {
-   msg.delete(30)
-    msg.reply('**Küfür Engellendi**');
-  }
-});
-client.on('message', msg => {
-  if (msg.content === 'sa') {
-    msg.reply('Aleyküm Selam cnm :))');
-  }
-});
+
+////////////////////////
 
 client.elevation = message => {
   if(!message.guild) {
@@ -152,4 +128,4 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(ayarlar.token);
