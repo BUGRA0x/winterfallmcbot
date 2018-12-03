@@ -100,9 +100,9 @@ client.on("guildMemberAdd", member => {
 	
 	member.addRole(role); 
 	
-	channel.send(member + " artık " + role + " rolü ile aramızda");
+	channel.send(member + " artık " + role + " rolü ile aramızda! Hoş geldin dostum.");
 	
-	member.send("Aramıza hoş geldin, WinterFallMC'nin tadını çıkar! Ayrıca kuralları okursan iyi edersin :)")
+	member.send("Aramıza hoş geldin, WinterFallMC'nin tadını çıkar! Ayrıca kuralları okumanı tavsiye ederim. :)")
 	
 });
 
