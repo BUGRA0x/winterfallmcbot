@@ -13,23 +13,7 @@ exports.run = (client, message, params) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('= Komut Listesi =
-
-[Komut hakkında bilgi için /yardım <komut adı>]
-
-/sor             :: Sihirli 8ball sorularınızı cevaplar
-/bilgi           :: Bot ile ilgili bilgi verir.
-/davet           :: Botun davet linkini gönderir.
-/kullanıcıbilgim :: Komutu kullanan kişi hakkında bilgi verir.
-/load            :: Yeni eklenen komutu yükler.
-/duyur           :: Yazdığınız şeyi bota duyurtur.
-/reload          :: İstediğiniz bir komutu yeniden başlatır.
-/stresçarkı      :: Sizin için bir stres çarkı çevirir.
-/sunucubilgi     :: Sunucu hakkında bilgi verir.
-/sustur          :: İstediğiniz kişiyi  susturur.
-/temizle         :: Belirlenen miktar mesajı siler.
-/yardım          :: Tüm komutları gösterir.
-/                :: Bu komut yasaklanmış.');
+    .setDescription('Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
   } else {
     let command = params[0];
