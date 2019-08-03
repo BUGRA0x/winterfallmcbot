@@ -1,0 +1,75 @@
+{
+  "name": "destek",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "KFwkp",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "memusername",
+      "name": "Store Member Info"
+    },
+    {
+      "channelName": "destek-${tempVars(\"memusername\")}",
+      "topic": "Destek odası...",
+      "position": "",
+      "storage": "1",
+      "varName": "destekch",
+      "name": "Create Text Channel"
+    },
+    {
+      "channel": "6",
+      "varName": "destekch",
+      "message": "Destek odanız şu anda hazırlanıyor...\nBu işlem 5/10 saniye sürebilir.",
+      "storage": "1",
+      "varName2": "ss",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "3",
+      "varName": "destekch",
+      "permission": "READ_MESSAGES",
+      "state": "1",
+      "name": "Set Channel Permissions"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "channel": "3",
+      "varName": "destekch",
+      "member": "1",
+      "varName2": "",
+      "permission": "SEND_MESSAGES",
+      "state": "0",
+      "name": "Set Member Channel Perms"
+    },
+    {
+      "channel": "5",
+      "varName": "destekch",
+      "message": "Merhaba ${member}, nasıl yardımcı olabiliriz?",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "ss",
+      "name": "Delete Message"
+    }
+  ]
+}
